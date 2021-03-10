@@ -1,0 +1,13 @@
+created: 20210309195141419
+modified: 20210309201625437
+tags: utilities
+title: SampleModal
+type: text/vnd.tiddlywiki
+
+param1 = <<param1>><br>
+
+param2 = <<param2>> <br>
+
+param3 = <<param3>> <br>
+
+`<$action-sendmessage $message="tm-modal" $param="SampleModal" param1=<<dom-data-index>> param2=<<dom-data-colour>> />`

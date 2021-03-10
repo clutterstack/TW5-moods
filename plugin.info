@@ -1,0 +1,11 @@
+{
+	"title": "$:/plugins/can/moods",
+	"name": "Moods",
+	"author": "Chris Nicoll",
+	"core-version": ">=5.0.0",
+    "version": "0.0.1",
+	"plugin-type": "plugin",
+	"description": "Moods - changeable colour palettes",
+	"plugin-priority": "0",
+	"dependents": ["$:/themes/tiddlywiki/vanilla"]
+}

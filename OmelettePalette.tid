@@ -1,0 +1,170 @@
+created: 20210308194500245
+description: Break eggs
+modified: 20210308194516327
+name: Omelette
+tags: $:/tags/Palette
+title: $:/plugins/can/moods/palettes/Omelette
+type: application/x-tiddler-dictionary
+
+mood1: #6e5fff
+mood2: #00ff00
+mood3: #61b8df
+mood4: #535353
+mood5: #8e8e8e
+mood6: #000000
+mood7: #387562
+mood8: #ddaacc
+page-background: <<colour mood4>>
+border: <<colour mood3>>
+background: <<colour mood6>>
+background-subtle: <<colour mood1>>
+foreground: <<colour mood2>>
+foreground-muted: <<colour mood3>>
+tab-foreground: <<colour mood2>>
+tab-foreground-selected: <<colour mood6>>
+controls-foreground: <<colour mood5>>
+control-selected: <<colour mood2>>
+tiddler-title-foreground: <<colour mood3>>
+alert-fg: 
+alert-bg: 
+alert-muted: <<colour mood7>>
+foreground-selected: <<colour controls-selected>>
+site-title-foreground: <<colour tiddler-title-foreground>>
+
+
+tiddler-link-foreground: <<colour controls-foreground>>
+
+tiddler-subtitle-foreground: <<colour foreground-muted>>
+tiddler-background: <<colour background>>
+
+tag-foreground: <<colour tab-foreground>>
+tag-background: <<colour controls-foreground>>
+
+foreground-selected: <<colour background>>
+
+sidebar-foreground: <<colour foreground-muted>>
+code-foreground: <<colour foreground-muted>>
+muted-foreground: <<colour foreground-muted>>
+external-link-foreground-hover: inherit
+external-link-foreground-visited: <<colour foreground-subtle>>
+external-link-foreground: <<colour foreground-bold>>
+very-muted-foreground: <<colour foreground muted>>
+alert-muted-foreground: <<colour alert-muted>>
+download-foreground: <<colour background>>
+dragger-foreground: <<colour background>>
+message-foreground: <<colour foreground-muted>>
+sidebar-tab-foreground-selected: <<colour tab-foreground-selected>>
+sidebar-tab-foreground: <<colour tab-foreground>>
+sidebar-tiddler-link-foreground-hover: <<colour control-selected>>
+sidebar-tiddler-link-foreground: <<colour foreground-subtle>>
+static-alert-foreground: <<colour background>>
+sidebar-button-foreground: <<colour foreground>>
+sidebar-controls-foreground-hover: <<colour control-selected>>
+sidebar-controls-foreground: <<colour foreground-muted>>
+sidebar-muted-foreground-hover: <<colour background>>
+sidebar-muted-foreground: <<colour foreground-muted>>
+tiddler-controls-foreground-hover: <<colour control-selected>>
+tiddler-controls-foreground-selected: <<colour foreground-bold>>
+tiddler-controls-foreground: <<colour foreground-muted>>
+
+
+dropdown-border: <<colour border>>
+code-border: <<colour border>>
+message-border: <<colour border>>
+tab-border-selected: <<colour border>>
+tab-border: <<colour border>>
+tab-divider: <<colour border>>
+modal-border: <<colour border>>
+tiddler-editor-border: <<colour border>>
+table-border: <<colour border>>
+modal-footer-border: <<colour border>>
+modal-header-border: <<colour border>>
+tiddler-info-border: <<colour border>>
+notification-border: <<colour border>>
+pre-border: <<colour border>>
+sidebar-tab-border-selected: <<colour border>>
+sidebar-tab-border: <<colour border>>
+sidebar-tab-divider: <<colour border>>
+tiddler-border: <<colour border>>
+tiddler-editor-border-image: <<colour border>>
+alert-border: #b99e2f
+button-border: 
+
+
+tiddler-editor-background: <<colour background>>
+code-background: <<colour background>>
+dropdown-background: <<colour background>>
+modal-background: <<colour background>>
+tiddler-link-background: <<colour background>>
+tiddler-editor-fields-odd: <<colour background>>
+tab-background-selected: <<colour control-selected>>
+dropdown-tab-background-selected: <<colour tab-background-selected>>
+dropdown-tab-background: <<colour tab-background>>
+sidebar-tab-background-selected: <<colour tab-background-selected>>
+sidebar-tab-background: <<colour tab-background>>
+
+tiddler-info-tab-background: <<colour tab-background>>
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+modal-backdrop: <<colour foreground>>
+dragger-background: <<colour foreground>>
+
+pre-background: <<colour background-subtle>>
+modal-footer-background: <<colour background-subtle>>
+table-footer-background: <<colour background-subtle>>
+table-header-background: <<colour background-subtle>>
+tiddler-editor-fields-even: <<colour background-subtle>>
+tiddler-info-background: <<colour background-subtle>>
+alert-highlight: #881122
+alert-background: #ffe476
+dropzone-background: rgba(0,200,0,0.7)
+message-background: #ecf2ff
+download-background: #34c734  /*This is bright green */
+notification-background: #ffffdd
+untagged-background: #999999
+
+
+sidebar-foreground-shadow: rgba(255,255,255, 0.8)
+button-foreground: 
+button-background: 
+select-tag-background: 
+selection-background: 
+selection-foreground: 
+select-tag-foreground: 
+blockquote-bar: <<colour muted-foreground>>
+toolbar-new-button: 
+toolbar-options-button: 
+toolbar-save-button: 
+toolbar-info-button: 
+toolbar-edit-button: 
+toolbar-close-button: 
+toolbar-delete-button: 
+toolbar-cancel-button: 
+toolbar-done-button: 
+wikilist-background: #e5e5e5
+wikilist-item: #fff
+wikilist-info: #000
+wikilist-title: #666
+wikilist-title-svg: <<colour wikilist-title>>
+wikilist-url: #aaa
+wikilist-button-open: #4fb82b
+wikilist-button-open-hover: green
+wikilist-button-reveal: #5778d8
+wikilist-button-reveal-hover: blue
+wikilist-button-remove: #d85778
+wikilist-button-remove-hover: red
+wikilist-toolbar-background: #d3d3d3
+wikilist-toolbar-foreground: #888
+wikilist-droplink-dragover: rgba(255,192,192,0.5)
+wikilist-button-background: #acacac
+wikilist-button-foreground: #000
+diff-delete-background: #ffc9c9
+diff-delete-foreground: <<colour foreground>>
+diff-equal-background: 
+diff-equal-foreground: <<colour foreground>>
+diff-insert-background: #aaefad
+diff-insert-foreground: <<colour foreground>>
+diff-invisible-background: 
+diff-invisible-foreground: <<colour muted-foreground>>
+dirty-indicator: #ff0000

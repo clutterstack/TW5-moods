@@ -1,0 +1,8 @@
+title: $:/plugins/can/moods/base_css_tweaks
+tags: [[$:/tags/Stylesheet]]
+
+span.tc-tag-label.tc-btn-invisible {
+    color: <<colour tag-foreground>>;
+}
+
+/*same as tc-tag-label*/

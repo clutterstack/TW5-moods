@@ -1,0 +1,52 @@
+created: 20210308234428301
+modified: 20210310040246820
+mood_colours: mood1 mood2 mood3 mood4 mood5 mood6
+tags: 
+title: Change colours in Omelette palette
+type: text/vnd.tiddlywiki
+
+\define testactions() <$action-sendmessage $message="tm-modal" $param="SampleModal" param1=<<__palette__>> param2=<<dom-data-colour>> param3=<<dom-data-groupname>> param4=<<dom-data-index>>/>
+
+\define select-swatch-actions() <$action-setfield $tiddler=<<dom-data-palette>> $index=<<dom-data-groupname>> $value=<<dom-data-setvalue>> />
+
+\define setMoodColours()
+<div class=can-flex-horiz>
+<$list filter="[enlist{!!mood_colours}]" variable="colname"><$macrocall $name=changePaletteColour palette="$:/palettes/Ham" colourname=<<colname>>/>
+</$list>
+</div>
+\end
+
+\define changePaletteColour(palette colourname) <$edit-text tiddler=<<__palette__>> index=<<__colourname__>> type="color" tag="input"/>
+
+\define pickGroupColours(palette)
+<$eventcatcher events="click" selector=".palette-swatch" actions-click=<<select-swatch-actions>> tag="div" class="can-mood-switcher">
+<$list filter="[[$:/plugins/can/moods/groups]indexes[]]" variable="groupname">
+<div class="can-flex-horiz">
+<div><$text text={{{[[$:/plugins/can/moods/groups]getindex<groupname>]}}} />: </div><div  class="can-flex-horiz can-swatchbar"><$list filter="[enlist{!!mood_colours}]" variable="colname"><div class="can-swatchbar-box"><$macrocall $name=swatchbutton palette="$palette$" index=<<colname>> group=<<groupname>> /></div></$list></div></div></$list>
+
+</$eventcatcher>
+\end
+
+Check the Ham palette: [[$:/palettes/Ham]] <br> 
+
+Test some results with the [[Style sampler]].
+
+''Click on the palette colours to change them:''
+
+<<setMoodColours>>
+<hr>
+
+''Choose a theme colour for each group:''
+
+<<pickGroupColours "$:/palettes/Ham" >>
+
+<style>
+input[type="color"] {
+	-webkit-appearance: none;
+    flex: 1;
+	border: none;
+    padding: 0;
+	width: 32px;
+	height: 32px;
+}
+</style>

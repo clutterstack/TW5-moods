@@ -1,0 +1,26 @@
+created: 20210309194959646
+modified: 20210310144406301
+tags: utilities
+title: Style sampler
+type: text/vnd.tiddlywiki
+
+! h1 Heading
+
+Normal tiddler text
+
+<<tag testtag>> <<tag "custom tag">> `inline code` [[Existing tiddler link]] [[Missing tiddler link]] [[External link |https://github.com/Jermolene/TiddlyWiki5 ]]
+
+```
+code fences
+```
+
+|A |Test |Table |h
+|With |some |content |
+
+''List (of non-system tiddlers):''
+
+<$list filter="[all[tiddlers]!is[system]]" />
+
+
+<$button message="tm-modal" param="SampleModal">A button</$button> (button opens a modal)
+

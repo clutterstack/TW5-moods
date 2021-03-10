@@ -1,0 +1,8 @@
+caption: Mood
+tags: $:/tags/SideBar
+title: $:/plugins/can/moods/sidebartab
+type: text/vnd.tiddlywiki
+
+<div style="margin-right: 0.5em;">
+{{Change colours in Ham palette}}
+</div>

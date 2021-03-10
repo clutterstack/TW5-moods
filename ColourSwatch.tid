@@ -1,0 +1,30 @@
+created: 20210309154443149
+modified: 20210310035909004
+tags: $:/tags/Macro
+title: $:/plugins/can/moods/swatch
+type: text/vnd.tiddlywiki
+
+\define assembleclass() palette-swatch mood-$(index)$ group-$(group)$ $(iscurrent)$
+
+\define moodcolour() <$transclude tiddler=<<__palette__>> index=<<__index__>>/>
+
+\define bordercoll(is very cool but maybe works better simpler) <$list filter="[<__palette__>getindex<__group__>removeprefix[<<colour ]removesuffix[>>]match<__index__>]" emptyMessage="""<$list filter="[<__palette__>getindex<__index__>]" variable="bg"><<bg>></$list>""" variable="matches">2px solid #999999</$list>
+
+\define bordercol() <$list filter="[<__palette__>getindex<__group__>removeprefix[<<colour ]removesuffix[>>]match<__index__>]" emptyMessage="1px solid #aaaaaa" variable="matches">0.3em solid <<colour foreground>></$list>
+
+\define comparecols(mood, curr) <$list filter="[[$curr$]match[$mood$]]"/>
+
+\define swatchbutton(palette index group)
+<$vars palette=<<__palette__>> index=<<__index__>> group=<<__group__>>>
+<$wikify name=moodwik text=<<moodcolour>> >
+<$set name=iscurrent filter="[<__palette__>getindex<__group__>removeprefix[<<colour ]removesuffix[>>]match<__index__>then[current-swatch]]" >
+<span class=<<assembleclass>> data-palette="$palette$" data-colour=<<moodwik>> data-groupname="$group$" data-setvalue="<<colour $index$>>" ></span>
+</$set></$wikify></$vars>
+<style>
+span.palette-swatch.mood-$index$.group-$group$ {
+    background-color:<<moodcolour>>;
+}
+</style>
+\end
+
+<$macrocall $name=swatchbutton palette="$:/palettes/Ham" index="mood5" group="background"/>

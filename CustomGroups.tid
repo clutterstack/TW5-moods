@@ -1,0 +1,15 @@
+title: $:/plugins/can/moods/groups
+type: application/x-tiddler-dictionary
+
+page-background: Sidebar background
+border: Borders
+background: Tiddler background
+background-subtle: Alternate background
+foreground: Tiddler text
+foreground-muted: Controls
+tab-foreground: Tab text
+tab-foreground-selected: Selected tab text
+tab-background: Tab background
+controls-foreground: Sidebar list text
+control-selected: Selected controls
+tiddler-title-foreground: Tiddler title
